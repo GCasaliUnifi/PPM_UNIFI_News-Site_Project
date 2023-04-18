@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- metadata for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon library to use socials Icons without license issues-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- My stylesheets -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/headerStylesheet.css">
+    <link rel="stylesheet" href="css/footerStylesheet.css">
+    <link rel="stylesheet" href="css/contentsStylesheet.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/mercuryNews.js"></script>
+
+    <title>Mercury News Copy Project</title>
+</head>
+<body id="Top">
+    <div class="flex-container">
+        <div class="header-container">
+            <div class="header-container-fixed">
+                <div class="sections-menu-container">
+                    <img id="menu-icon" src="images/hamburger-menu.svg" alt="Selections">
+                    <p>All sections</p>
+                </div>
+                <div class="news-logo-container">
+                    <img id="news-logo" src="images/img.png" alt="The Mercury News">
+                </div>
+                <div class="right-side-container">
+                    <button class="user-login" id="login-button">Login</button>
+                    <button class="user-login" id="subscribe-button">Subscribe</button>
+                    <div class="user-details">
+                        <!-- I just simply copied the code for the icon since I am bad at drawing-->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 32 32">
+                    <path fill="#000000" d="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"></path>
+                </svg>
+                        <span class="unicode-character">&#x25BC</span>
+                    </div>
+                    <div class="search-icon">
+                        <img id="search-icon" src="images/icons8-search.svg" alt="Search">
+                    </div>
+                </div>
+            </div>
+            <div class="header-disappearing-container">
+                <div class="weather-date-container">
+                    <div class="temp-container">25°C</div>
+                    <div class="weather-img-container">
+                        <img id="weather-img" src="images/sun-svgrepo-com.svg" alt="Weather-icon">
+                    </div>
+                    <div class="date-container">
+                        Wednesday, 12 May 2021
+                        <a href="#e-Edition">
+                            <p class="todays-e-edition">Today's e-Edition</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden-logo-container">
+                    <img id="hidden-logo" src="images/img.png" alt="Journal logo">
+                </div>
+                <div class="header-ad-container">
+                    <img id="ad-placeholder" src="https://via.placeholder.com/400x100/cccccc/3d3535?text=Ad+Placeholder" alt="Ad placeholder">
+                </div>
+            </div>
+            <div class="header-nav-buttons-container">
+                <div class="nav-buttons">
+                    <ul class="nav-menu">
+                        <li><a href="#News">News</a></li>
+                        <li><a href="#Local">Local</a></li>
+                        <li><a href="#Obituaries">Obituaries</a></li>
+                        <li><a href="#Sports">Sports</a></li>
+                        <li><a href="#ThingsToDO">Things to Do</a></li>
+                        <li><a href="#Business">Business</a></li>
+                        <li><a href="#Real Estate">Real Estate</a></li>
+                        <li><a href="#Opinion">Opinion</a></li>
+                        <li><a href="#Marketplace">Marketplace</a></li>
+                        <li><a href="#e-Edition">e-Edition</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-trending-bar-container">
+                <p>TRENDING:</p>
+                <ul class="trending-nav-menu">
+                    <li><a href="#Trending1">Trending1</a></li>
+                    <li><a href="#Trending2">Trending2</a></li>
+                    <li><a href="#Trending3">Trending3</a></li>
+                    <li><a href="#Trending4">Trending4</a></li>
+                    <li><a href="#Trending5">Trending5</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contents-container">
+            <div class="featured-content-wrapper">
+                <div class="featured-content">
+                    <div class="featured-content-left">
+                        <article class="featured-main-article">
+                            <div class="article-info">
+                                <div class="subscriber-only-tag">Subscriber Only</div>
+                                <h2 class="article-title"><a href="#Article1">Drought restrictions ending across Bay Area</a></h2>
+                                <div class="article-description">
+                                    First came a dozen soaking atmospheric river storms.
+                                    Then a huge Sierra Nevada snowpack, which on Monday was 248% of normal.
+                                    Now comes drought relief.
+                                </div>
+                                <h3>Related</h3>
+                                <ul class="related-list">
+                                    <li>
+                                        <a href="#Related1">Animated map: Watch 30-plus atmospheric rivers slam into California</a>
+                                        <time datetime="11-04-2023">4 days ago</time>
+                                    </li>
+                                    <li>
+                                        <a href="#Related2">7 charts that explain California’s wild winter of 2023 </a>
+                                        <time datetime="11-04-2023">4 days ago</time>
+                                    </li>
+                                    <li>
+                                        <a href="#Related3">After the storms: UC Garden’s rescue operation to save a paradise lost</a>
+                                        <time datetime="11-04-2023">3 days ago</time>
+                                    </li>
+                                </ul>
+                            </div>
+                            <figure class="main-article-image-wrapper">
+                                <img id="main-article-img" src="https://via.placeholder.com/450x300/cccccc/000000.png?text=Main+Article+image" alt="Article image">
+                            </figure>
+                        </article>
+                        <div class="featured-bottom-left">
+                            <article class="featured-smaller-article">
+                                <a href="#SmallerFeatured1">
+                                    <img src="https://via.placeholder.com/340x200/cccccc/000000.png?text=Smaller+featured+1" alt="Smaller featured article 1">
+                                </a>
+                                <a href="#SmallerFeatured1">
+                                    <h2>California woman who was cited for honking loses her First Amendment case</h2>
+                                </a>
+                            </article>
+                            <article class="featured-smaller-article">
+                                <a href="#SmallerFeatured2">
+                                    <img src="https://via.placeholder.com/340x200/cccccc/000000.png?text=Smaller+featured+2" alt="Smaller featured article 2">
+                                </a>
+                                <a href="#SmallerFeatured2">
+                                    <h2>
+                                        ‘This is what you play for’: Warriors look forward to playoff reset after tumultuous season
+                                    </h2>
+                                </a>
+                            </article>
+                            <article class="featured-smaller-article">
+                                <a href="#SmallerFeatured3">
+                                    <img src="https://via.placeholder.com/340x200/cccccc/000000.png?text=Smaller+featured+3" alt="Smaller featured article 3">
+                                </a>
+                                <a href="#SmallerFeatured3">
+                                    <h2>San Jose police chief makes first public statement on union fentanyl scandal</h2>
+                                </a>
+                            </article>
+                            <article class="featured-smaller-article">
+                                <a href="#SmallerFeatured4">
+                                    <img src="https://via.placeholder.com/340x200/cccccc/000000.png?text=Smaller+featured+4" alt="Smaller featured article 4">
+                                </a>
+                                <a href="#SmallerFeatured4">
+                                    <h2>$375,000 in fines for construction firm seeking San Jose council project approval</h2>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="featured-headline-list">
+                        <h2 id="latest-headlines-text">LATEST HEADLINES</h2>
+                        <ul class="latest-headlines">
+                            <li class="latest-headlines-item">
+                                <div class="subscriber-only-tag">Subscriber Only</div>
+                                <a href="#Latest1">One injured in downtown San Jose shooting</a>
+                                <time datetime="11-04-2023">3 hours ago</time>
+                            </li>
+                            <li class="latest-headlines-item">
+                                <a href="#Latest2">Bicyclist hit and killed near Filoli in San Mateo County</a>
+                                <time datetime="11-04-2023">7 hours ago</time>
+                            </li>
+                            <li class="latest-headlines-item">
+                                <a href="#Latest3">Money pours into early days of Democrat Adam Frisch’s second campaign to unseat Rep. Lauren Boebert</a>
+                                <time datetime="11-04-2023">3 minutes ago</time>
+                            </li>
+                            <li class="latest-headlines-item">
+                                <a href="#Latest4">What we know about the gunman who opened fire at a Louisville bank</a>
+                                <time datetime="11-04-2023">37 minutes ago</time>
+                            </li>
+                            <li class="latest-headlines-item">
+                                <a href="#Latest5">Ask Amy: Was it wrong to return these unwanted letters to the sender?</a>
+                                <time datetime="11-04-2023">48 minutes ago</time>
+                            </li>
+                            <li class="latest-headlines-item">
+                                <a href="#Latest6">Harriette Cole: Something is wrong with my ankles, and I don’t know what to do</a>
+                                <time datetime="11-04-2023">1 hour ago</time>
+                            </li>
+                            <li class="latest-headlines-item">
+                                <a href="#Latest7">Two man enter not-guilty pleas in slaying of man found burning in rural Bay Area field</a>
+                                <time datetime="11-04-2023">1 hour ago</time>
+                            </li>
+                            <li class="socials">
+                                <div class="newsletter">
+                                    <p>Get Morning Report and other email newsletters</p>
+                                    <a href="#Newsletter">Sign up</a>
+                                </div>
+                                <div class="follow-us">
+                                    <p>Follow us</p>
+                                </div>
+                                <div class="socials-follow">
+                                    <a href="#" class="fa fa-facebook"></a>
+                                    <a href="#" class="fa fa-twitter"></a>
+                                    <a href="#" class="fa fa-instagram"></a>
+                                    <a href="#" class="fa fa-rss"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="featured-sidebar-ad">
+                    <img id="sidebar-ad" src="https://via.placeholder.com/250x600.png?text=Ad+Placeholder" alt="Vertical Ad">
+                </div>
+            </div>
+            <div class="horizontal-ad-container">
+                <img class="horizontal-ad" src="https://via.placeholder.com/900x200.png?text=Ad+Placeholder" alt="Horizontal Ad">
+            </div>
+            <div class="most-popular-container">
+                <div class="most-popular-top10">
+                    <div id="most-popular-text">Most Popular</div>
+                    <ul class="popular-10">
+                        <li class="popular-10-element">
+                            <div class="blue-circle">1</div>
+                            <a href="#Popular-1">
+                                Dear Abby: I don't want my wife to be a stay-at-home mom to a dog
+                            </a>
+                        </li>
+                        <li class="popular-10-element">
+                            <div class="blue-circle" data-number="2">2</div>
+                            <a href="#Popular-2">
+                                Harriette Cole: I felt so awkward on this trip with a co-worker
+                            </a>
+                        </li>
+                        <li class="popular-10-element">
+                            <div class="blue-circle" data-number="3">3</div>
+                            <a href="#Popular-3">
+                                FBI warning: Don’t use free public phone charging stations
+                            </a>
+                        </li>
+                        <li class="popular-10-element">
+                            <div class="blue-circle" data-number="4">4</div>
+                            <a href="#Popular-4">
+                                Ask Amy: I asked for money, and she gave me a painting. What do I do now?
+                            </a>
+                        </li>
+                        <li class="popular-10-element">
+                            <div class="blue-circle" data-number="5">5</div>
+                            <a href="#Popular-5">
+                                Dear Abby: My dad says he had no choice but to cheat. I'm not buying it.
+                            </a>
+                        </li>
+                        <li class="popular-10-element">
+                            <div class="blue-circle" data-number="6">6</div>
+                            <a href="#Popular-6">
+                                Kurtenbach: The Warriors were the last team to make the playoffs. It was all part of the plan
+                            </a>
+                        </li>
+                        <li class="popular-10-element">
+                            <div class="blue-circle" data-number="7">7</div>
+                            <a href="#Popular-7">
+                                H-1B court ruling: Work-ban cloud lifts for Bay Area spouses after years of fear
+                            </a>
+                        </li>
+                        <li class="popular-10-element">
+                            <div class="blue-circle" data-number="8">8</div>
+                            <a href="#Popular-8">
+                                Ask Amy: Why did I end the friendship? Let me tell you about this traumatic car trip.
+                            </a>
+                        </li>
+                        <li class="popular-10-element">
+                            <div class="blue-circle" data-number="9">9</div>
+                            <a href="#Popular-9">
+                                Miss Manners: I want to have a 14-course dinner party. What are the rules?
+                            </a>
+                        </li>
+                        <li class="popular-10-element">
+                            <div class="blue-circle" data-number="10">10</div>
+                            <a href="#Popular-10">
+                                Judge names 17 Antioch cops who allegedly sent racist text messages, memes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="most-popular-side-ad"></div>
+            </div>
+            <div class="four-columns-container">
+                <div class="four-columns-item">
+                    <h2 class="column-item-title">
+                        <a href="#CrimeSection">Crime and Public Safety</a>
+                    </h2>
+                    <div class="item-contents">
+                        <article class="first-article-column">
+                            <a href="#Crime1">
+                                <img src="https://via.placeholder.com/340x200/cccccc/000000.png?text=Column+article+1" alt="Crime Article 1">
+                            </a>
+                            <a href="#Crime1">
+                                <h2>Fake food deliveries, drones and lax security: how drugs get into California’s juvenile halls</h2>
+                            </a>
+                            <p>Staff at the two juvenile halls reported detainees used fake
+                                DoorDash delivery drivers to smuggle pills inside of burritos,
+                                said the county's inspector general.</p>
+                        </article>
+                        <ul class="other-articles-list">
+                            <li class="other-list-item">
+                                <a href="#Crime2">California woman says she unwittingly was drawn into plot to kidnap
+                                    Iranian opposition activist
+                                </a>
+                            </li>
+                            <li class="other-list-item">
+                                <div class="subscriber-only-tag">Subscriber Only</div>
+                                <a href="#Crime3">
+                                    Bicyclist injured in San Jose hit-and-run crash
+                                </a>
+                            </li>
+                            <li class="other-list-item">
+                                <div class="subscriber-only-tag">Subscriber Only</div>
+                                <a href="#Crime4">
+                                    Judge sentences 72-year-old Oakland man to federal prison for cooking crack
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="four-columns-item">
+                    <h2 class="column-item-title">
+                        <a href="#SportsSection">Sports</a>
+                    </h2>
+                    <div class="item-contents">
+                        <article class="first-article-column">
+                            <a href="#Sports1">
+                                <img src="https://via.placeholder.com/340x200/cccccc/000000.png?text=Column+article+2" alt="Sport Article 1">
+                            </a>
+                            <a href="#Sports1">
+                                <h2>SF Giants done in by home runs, old foes to start Dodgers rivalry on sour note</h2>
+                            </a>
+                            <p>Logan Webb allowed 2 HR, 4 ER while Giants couldn't hit Julio
+                                Urías in 9-1 loss to rival Dodgers.</p>
+                        </article>
+                        <ul class="other-articles-list">
+                            <li class="other-list-item">
+                                <a href="#Sports2">Erik Karlsson becomes first NHL defenseman
+                                    in 31 years to reach 100 points in a season
+                                </a>
+                            </li>
+                            <li class="other-list-item">
+                                <a href="#Sports3">
+                                    Women’s sports are having a huge moment. The WNBA is missing it.
+                                </a>
+                            </li>
+                            <li class="other-list-item">
+                                <a href="#Sports4">
+                                    Former Stanford star Haley Jones selected by Atlanta Dream in WNBA Draft
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="four-columns-item">
+                    <h2 class="column-item-title">
+                        <a href="#WeatherSection">Bay Area Weather</a>
+                    </h2>
+                    <div class="item-contents">
+                        <article class="first-article-column">
+                            <a href="#Weather1">
+                                <img src="https://via.placeholder.com/340x200/cccccc/000000.png?text=Column+article+3" alt="Weather Article 1">
+                            </a>
+                            <a href="#Weather1">
+                                <h2>Repairs to a storm-battered Scenic Road in Carmel are almost done, county says</h2>
+                            </a>
+                            <p>For months, a quarter-mile stretch of Scenic Road has been
+                                closed to the public while infrastructure battered by heavy rain and high surf earlier
+                                this year underwent emergency restoration.
+                                Repairs began on Feb. 14 and are expected to finish on...</p>
+                        </article>
+                        <ul class="other-articles-list">
+                            <li class="other-list-item">
+                                <a href="#Weather2">Could sightings of jelly-like creatures on California
+                                    beaches signal El Niño on the horizon?
+                                </a>
+                            </li>
+                            <li class="other-list-item">
+                                <a href="#Weather3">
+                                    Did this winter solve the Colorado River crisis? No – but it took some pressure off,
+                                    for now
+                                </a>
+                            </li>
+                            <li class="other-list-item">
+                                <a href="#Weather4">
+                                    California storms hit beekeepers, but honey outlook’s sweet
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="four-columns-item column-side-ad">
+                    <img src="https://via.placeholder.com/200x400.png?text=Ad+Placeholder" alt="Vertical Ad">
+                </div>
+            </div>
+            <div class="photo-gallery-container">
+                <div class="photo-gallery">
+                    <h2 class="gallery-title">
+                        <a href="#PhotoGallery">Photos</a>
+                    </h2>
+                    <div class="photo-gallery-content">
+                        <article class="main-article">
+                            <a href="#PhotoGallery-1">
+                                <img src="https://via.placeholder.com/600x320/cccccc/000000.png?text=Photo+Gallery+Article" alt="Photo Gallery Article">
+                            </a>
+                            <h3>
+                                <a href="##PhotoGallery-1">Photos: Peregrine falcons welcome first hatchling at UC Berkeley</a>
+                            </h3>
+                            <p>The first of four expected peregrine falcon hatchlings enjoyed its first birthday
+                                atop UC Berkeley's Campanile. </p>
+                        </article>
+                        <ul class="other-articles">
+                            <li class="other-articles-item">
+                                <a href="#PhotoGallery-2">
+                                    <img src="https://via.placeholder.com/90x50/cccccc/000000.png?text=Photo+Article+2" alt="Photo Gallery Article">
+                                </a>
+                                <a href="#PhotoGallery-2">
+                                    <h3>California officials gird for potential disaster:
+                                        When and where will the record melting snow go?
+                                    </h3>
+                                </a>
+                            </li>
+                            <li class="other-articles-item">
+                                <a href="#PhotoGallery-3">
+                                    <img src="https://via.placeholder.com/90x50/cccccc/000000.png?text=Photo+Article+3" alt="Photo Gallery Article">
+                                </a>
+                                <a href="#PhotoGallery-3">
+                                    <h3>SFFILM Fest 2023: Steph Curry doc and 9 other films you shouldn’t miss</h3>
+                                </a>
+                            </li>
+                            <li class="other-articles-item">
+                                <a href="#PhotoGallery-4">
+                                    <img src="https://via.placeholder.com/90x50/cccccc/000000.png?text=Video+Article+4" alt="Photo Gallery Article">
+                                </a>
+                                <a href="#PhotoGallery-4">
+                                    <h3>Video: See rare California poppy super bloom</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="business-bar-container">
+                <h2 class="section-title">
+                    <a href="#BusinessSection">Business</a>
+                </h2>
+                <div class="business-bar-content">
+                    <article class="business-article">
+                        <a href="#BusinessMain">
+                            <img src="https://via.placeholder.com/340x200/cccccc/000000.png?text=Main+Business+article" alt="Sport Article 1">
+                        </a>
+                        <a href="#BusinessMain">
+                            <h2>Fox attorneys irk judge by revealing dual roles for Rupert Murdoch</h2>
+                        </a>
+                        <p>Fox Corp. had asserted since Dominion filed its lawsuit in 2021 that Rupert Murdoch had...</p>
+                    </article>
+                    <ul class="other-articles-list other-business-list">
+                        <li class="other-list-item">
+                            <a href="#Business2">
+                                <h3>Dominion can discuss general threats in Fox defamation trial</h3>
+                            </a>
+                        </li>
+                        <li class="other-list-item">
+                            <a href="#Business3">
+                                <h3>What we know about the gunman who opened fire at a Louisville bank</h3>
+                            </a>
+                        </li>
+                        <li class="other-list-item">
+                            <a href="#Business4">
+                                <h3>Poll: 4 in 10 say their next vehicle may be electric </h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="trending-nationally-container">
+                <div class="trending-nationally">
+                    <div id="trending-text">Trending Nationally</div>
+                    <ul class="trending-list">
+                        <li class="trending-element">
+                            <div class="blue-circle">1</div>
+                            <a href="#Trending-1">
+                                Boy, 7, and 19-year-old sister killed in e-bike battery fire in NYC apartment;
+                                neighbor recounts grim choice on who to save
+                            </a>
+                        </li>
+                        <li class="trending-element">
+                            <div class="blue-circle">2</div>
+                            <a href="#Trending-2">
+                                What we know about Louisville bank shooter Connor Sturgeon
+                            </a>
+                        </li>
+                        <li class="trending-element">
+                            <div class="blue-circle">3</div>
+                            <a href="#Trending-3">
+                                Police: ATV driven by 7-year-old flips, killing 5-year-old passenger
+                            </a>
+                        </li>
+                        <li class="trending-element">
+                            <div class="blue-circle">4</div>
+                            <a href="#Trending-4">
+                                Graphic novel based on Anne Frank diary removed by Florida school
+                            </a>
+                        </li>
+                        <li class="trending-element">
+                            <div class="blue-circle">5</div>
+                            <a href="#Trending-5">
+                                Elizabeth Holmes loses bid to delay imprisonment; judge recommends Texas prison
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trending-side-ad"></div>
+            </div>
+        </div>
+        <footer class="site-footer">
+            <div class="footer-logo">
+                <a href="#Top">
+                    <img src="images/mn-logo.svg" alt="Journal Logo">
+                </a>
+            </div>
+            <ul class="footer-nav-menu">
+                <li class="footer-menu-item">
+                    <a href="#News">News Alerts</a>
+                    <ul class="footer-menu-item-sublist">
+                        <li class="sublist-item"><a href="#Newsletters">Email Newsletters</a></li>
+                        <li class="sublist-item"><a href="#e-Edition">Today's e-Edition</a></li>
+                        <li class="sublist-item"><a href="#Mobile">Mobile Apps</a></li>
+                        <li class="sublist-item"><a href="#Sitemap">Site Map</a></li>
+                    </ul>
+                    <span class="bottom-arrow">&#x25BC</span>
+                </li>
+                <li class="footer-menu-item">
+                    <a href="#Marketplace">Marketplace</a>
+                    <ul class="footer-menu-item-sublist">
+                        <li class="sublist-item"><a href="#Obituary-ad">Place an Obituary</a></li>
+                        <li class="sublist-item"><a href="#Estate-ad">Place a Real Estate ad</a></li>
+                        <li class="sublist-item"><a href="#Lottery">Lottery</a></li>
+                    </ul>
+                    <span class="bottom-arrow">&#x25BC</span>
+                </li>
+                <li class="footer-menu-item">
+                    <a href="#Contact">Contact Us</a>
+                    <ul class="footer-menu-item-sublist">
+                        <li class="sublist-item"><a href="#DigitalAccess">Digital Access FAQ</a></li>
+                        <li class="sublist-item"><a href="#JoinUs">Join our Team</a></li>
+                        <li class="sublist-item"><a href="#Special">Special Sections</a></li>
+                        <li class="sublist-item"><a href="#Sponsor">Sponsor a Group</a></li>
+                        <li class="sublist-item"><a href="#SponsoredAccess">Get Sponsored Access</a></li>
+                        <li class="sublist-item"><a href="#Privacy">Privacy Policy</a></li>
+                        <li class="sublist-item"><a href="#Accessibility">Accessibility</a></li>
+                    </ul>
+                    <span class="bottom-arrow">&#x25BC</span>
+                </li>
+                <li class="footer-menu-item">
+                    <a href="#Advertising">Advertise With Us</a>
+                    <ul class="footer-menu-item-sublist">
+                        <li class="sublist-item"><a href="#Network-ad">Network Advertising</a></li>
+                        <li class="sublist-item"><a href="#Daily-ad">Daily Ads</a></li>
+                        <li class="sublist-item"><a href="#Legal-notice">Place a Legal Notice</a></li>
+                        <li class="sublist-item"><a href="#Public-notice">Public Notices</a></li>
+                        <li class="sublist-item"><a href="#Employers">Best Bay Area Employers</a></li>
+                        <li class="sublist-item"><a href="#Monster-jobs">Monster.com</a></li>
+                    </ul>
+                    <span class="bottom-arrow">&#x25BC</span>
+                </li>
+                <li class="footer-menu-item">
+                    <a href="#Subscribe">Subscribe</a>
+                    <ul class="footer-menu-item-sublist">
+                        <li class="sublist-item"><a href="#MyAccount">Member Services</a></li>
+                        <li class="sublist-item"><a href="#ManageSubscription">Manage Subscriptions</a></li>
+                        <li class="sublist-item"><a href="#Store">Store</a></li>
+                        <li class="sublist-item"><a href="#Archive">Archive Search</a></li>
+                        <li class="sublist-item"><a href="#Reprints">Reprints</a></li>
+                    </ul>
+                    <span class="bottom-arrow">&#x25BC</span>
+                </li>
+                <li class="footer-menu-item">
+                    <div class="follow-container">
+                        <div id="follow-txt">Follow Us</div>
+                        <div class="follow-icons">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-rss"></a>
+                        </div>
+                        <div class="subscribe-button">
+                            <a href="#Subscribe">Subscribe Now</a>
+                        </div>
+                    </div>
+                    <span class="bottom-arrow">&#x25BC</span>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
+
+
